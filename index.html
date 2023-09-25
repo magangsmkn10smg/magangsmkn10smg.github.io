@@ -4,19 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
-  <!-- Di bagian <head> dokumen HTML Anda -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Juga Anda mungkin perlu menambahkan CSS khusus untuk gaya laci -->
-
     <script src="https://cdn.tailwindcss.com"></script>
     <title>magangsmkn10smg</title>
   <style>
   body {
-    background-color: #1a202c; /* Ganti dengan warna latar belakang gelap yang diinginkan */
-    color: #fff; /* Ubah warna teks agar kontras dengan latar belakang gelap */
+    background-color: #1a202c; 
+    color: #fff; 
   }
-
-  /* Gaya kontainer utama untuk memiliki latar belakang putih */
   .bg-white {
     background-color: #fff;
   }
@@ -107,14 +102,12 @@
 </div>
 <br>
 
-<!-- drawer init and show -->
 <div class="text-center">
  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
     Berikan Saran
 </button>
 </div>
 
-<!-- drawer component -->
 <div id="drawer-contact" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
  <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
     <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
@@ -170,10 +163,7 @@
     </div>
 </footer>
 </section>
-
-<!-- Di akhir bagian <body> dokumen HTML Anda -->
     <script>
-   // Skrip JavaScript untuk menangani perilaku laci
      document.addEventListener('DOMContentLoaded', function () {
       const buttons = document.querySelectorAll('[data-drawer-target]');
 
@@ -182,20 +172,19 @@
        const target = document.getElementById(targetId);
 
        button.addEventListener('click', () => {
-            target.classList.add('translate-x-0'); // Tambahkan kelas untuk memunculkan laci
+            target.classList.add('translate-x-0'); 
         });
 
-         // Tombol tutup laci
+    
        const closeButton = target.querySelector('[data-drawer-hide]');
        closeButton.addEventListener('click', () => {
-            target.classList.remove('translate-x-0'); // Hapus kelas untuk menyembunyikan laci
+            target.classList.remove('translate-x-0'); 
         });
    });
   });
 </script>
-<!-- Di akhir bagian <body> dokumen HTML Anda -->
+
     <script>
-   // Skrip JavaScript untuk menangani perilaku laci
      document.addEventListener('DOMContentLoaded', function () {
       const buttons = document.querySelectorAll('[data-drawer-target]');
 
@@ -204,13 +193,13 @@
        const target = document.getElementById(targetId);
 
        button.addEventListener('click', () => {
-            target.classList.add('translate-x-0'); // Tambahkan kelas untuk memunculkan laci
+            target.classList.add('translate-x-0'); 
         });
 
          // Tombol tutup laci
        const closeButton = target.querySelector('[data-drawer-hide]');
        closeButton.addEventListener('click', () => {
-            target.classList.remove('translate-x-0'); // Hapus kelas untuk menyembunyikan laci
+            target.classList.remove('translate-x-0'); 
         });
    });
   });
